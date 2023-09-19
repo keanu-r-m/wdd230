@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Merriweather, Helvetica, sans-serif;
+}
+li {
+    list-style-type: none;
+    margin: 0.5em;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --primary-color: #1E2020;
+    --text-on-dark: #BBDD42;
+    --minimal-color: #7E4978;
+}
+
+body {
+    width: min(95%, 750px);
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--text-on-dark);
+}
+nav {
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+nav a {
+    color: var(--primary-color);
+}
+nav a:hover {
+    color: var(--minimal-color);
+}
+main h2 {
+    text-align: center;
+    margin-top: 1.5em;
+}
+.cards {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+.card {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 1em;
+}
+.card-1 ul {
+    text-align: left;
+}
+.card h3 {
+    background-color: var(--primary-color);
+    padding: 0.5em;
+    color: var(--text-on-dark);
+    margin-bottom: 0.5em;
+}
+footer {
+    margin-top: 1.5em;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1em 0;
+    color: white;
+}
+.country-flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
